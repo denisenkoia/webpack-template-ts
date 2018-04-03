@@ -1,0 +1,18 @@
+// ---- fonts ---- //
+
+@mixin fontFace($FontName, $FontPathName, $FontWeight) {
+  @font-face {
+    font-family: $FontName;
+    src:  url('/assets/fonts/#{$FontPathName}.eot');
+    src:  url('/assets/fonts/#{$FontPathName}.eot?#iefix') format('embedded-opentype'),
+          url('/assets/fonts/#{$FontPathName}.woff') format('woff'),
+          url('/assets/fonts/#{$FontPathName}.ttf') format('truetype'),
+          url('/assets/fonts/#{$FontPathName}.otf') format("opentype");
+    font-weight: $FontWeight;
+    font-style: normal;
+  }
+}
+
+@include fontFace('Roboto', 'Roboto-Regular', 400);
+
+$roboto: 'Roboto', Arial, Helvetica, sans-serif;

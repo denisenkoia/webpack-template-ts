@@ -1,0 +1,34 @@
+{
+  "name": "webpack_template_ts",
+  "version": "1.0.0",
+  "description": "webpack_template_ts",
+  "main": "common.ts",
+  "scripts": {
+    "buildProd": "set NODE_ENV=production&& webpack --config webpack.config.js",
+    "build": "webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --open"
+  },
+  "author": "Igor",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "markup-inline-loader": "^0.2.2",
+    "node-sass": "^4.8.3",
+    "postcss-loader": "^2.1.3",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "ts-loader": "^3.5.0",
+    "typescript": "^2.7.1",
+    "vue-loader": "^14.2.2",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "vue": "^2.5.16"
+  }
+}
